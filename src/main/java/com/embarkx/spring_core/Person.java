@@ -8,13 +8,14 @@ import org.springframework.stereotype.Controller;
 @Component
 public class Person {
 
-    @Autowired
-    @Qualifier("cat")
+    //@Autowired
+    //@Qualifier("cat")
     Animal animal;
 
-//    public Person(Animal animal) {
-//        this.animal = animal;
-//    }
+    @Autowired
+    public Person(@Qualifier("cat") Animal animal) {
+        this.animal = animal;
+    }
 
     public void playWith() {
         animal.Play();
