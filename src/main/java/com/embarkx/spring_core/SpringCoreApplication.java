@@ -17,6 +17,11 @@ public class SpringCoreApplication {
 		person.playWith();
 		Test testBean = applicationContext.getBean(Test.class);
 		testBean.testing();
+		Cat catBean = applicationContext.getBean("cat", Cat.class);
+		catBean.Play();
+		Dog dogBean = applicationContext.getBean("dog",Dog.class);
+		dogBean.Play();
+
 	}
 
 }
