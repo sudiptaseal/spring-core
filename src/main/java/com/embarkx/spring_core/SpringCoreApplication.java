@@ -3,7 +3,9 @@ package com.embarkx.spring_core;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Primary;
 import test.Test;
 
 @SpringBootApplication
@@ -23,5 +25,17 @@ public class SpringCoreApplication {
 		dogBean.Play();
 
 	}
+
+	//Declaring the bean using @Bean
+//	@Bean("samosa1")
+//	@Primary
+//	public Samosa getSamosa1() {
+//		return new Samosa("Tanduri samosa");
+//	}
+//
+//	@Bean("samosa2")
+//	public Samosa getSamosa2() {
+//		return new Samosa("Metha samosa");
+//	}
 
 }

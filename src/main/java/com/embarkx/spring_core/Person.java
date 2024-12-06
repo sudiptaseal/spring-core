@@ -12,6 +12,9 @@ public class Person {
     //@Qualifier("cat")
     Animal animal;
 
+    @Autowired
+    Samosa samosa;
+
 //    @Autowired
 //    public Person(@Qualifier("cat") Animal animal) {
 //        this.animal = animal;
@@ -24,5 +27,6 @@ public class Person {
 
     public void playWith() {
         animal.Play();
+        samosa.eat();
     }
 }
