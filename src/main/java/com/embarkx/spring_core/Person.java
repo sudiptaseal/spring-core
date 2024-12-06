@@ -12,8 +12,13 @@ public class Person {
     //@Qualifier("cat")
     Animal animal;
 
+//    @Autowired
+//    public Person(@Qualifier("cat") Animal animal) {
+//        this.animal = animal;
+//    }
+
     @Autowired
-    public Person(@Qualifier("cat") Animal animal) {
+    public void setPerson(@Qualifier("dog") Animal animal){
         this.animal = animal;
     }
 
