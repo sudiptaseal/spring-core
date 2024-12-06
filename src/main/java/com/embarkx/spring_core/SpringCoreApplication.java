@@ -7,7 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringCoreApplication {
 
 	public static void main(String[] args) {
-		Person person= new Person();
+
+		Animal animal = new Cat();
+		Person person= new Person(animal);
 		person.playWith();
 		SpringApplication.run(SpringCoreApplication.class, args);
 	}
