@@ -16,6 +16,7 @@ public class SpringCoreApplication {
 		Person person = applicationContext.getBean(Person.class);
 		person.playWith();
 		Test testBean = applicationContext.getBean(Test.class);
+		testBean.testing();
 	}
 
 }
